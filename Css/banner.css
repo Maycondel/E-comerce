@@ -1,0 +1,28 @@
+
+.banner{
+    background: url(../imagens/banner-image.png) no-repeat ;
+    background-size: 100% auto;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+} 
+.banner__conteudo{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 150px;
+}
+.banner__titulo{
+    color: white;
+    font-size: 2.75rem;
+    font-weight: bolder;
+}
+.banner__descriscao{
+    color: white;
+}
+.banner__botao-console{
+    color: white;
+    padding: 1rem;
+    border: none;
+    background-color: blue;
+}

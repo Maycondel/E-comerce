@@ -1,0 +1,42 @@
+
+.cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.cabeçalho__conteuco-1{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cabeçalho__barra-pesquisa{
+    display: flex;
+ 
+}
+.cabeçalho__campo-pesquisa{
+    margin-left: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 14px;
+    width: 100%;
+    width: 250px;
+    padding: .40rem;
+    border: none;
+ 
+}
+.cabeçalho__pesquisa-lupa{
+    background: url(../imagens/lupa.png) center no-repeat;
+    background-size: 24px auto;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 90%;
+}
+.cabeçalho__botao-login{
+   border: 1px solid blue;
+   background-color: white;
+   color: blue;
+   padding: .6rem;
+   padding: 12px 50px;
+   cursor: pointer;
+}
