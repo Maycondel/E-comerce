@@ -40,14 +40,15 @@
 @media screen and (max-width:480px){
 
     .cabeçalho__campo-pesquisa{
+        position: relative;
         width: 20px;
         transition: all 0.5s linear;
         background-color: none;
-
+        z-index: 4;
     }
     .cabeçalho__campo-pesquisa:focus{
         width: 100%;
-        outline: none;  
+        outline: none; 
 
     }
 }

@@ -25,11 +25,12 @@ padding-bottom: 1rem;
   transform: translate(0,-50%);
     left: 20px;
     transition: all .1s linear;
-    -webkit-transition: all .1s linear;
+    -webkit-transition: all 0.3s linear;
     -moz-transition: all .1s linear;
     background-color: white;
     padding: 5px;
     box-sizing: border-box;
+  
 }
 .rodape__logo-informaçao{
     display: flex;
