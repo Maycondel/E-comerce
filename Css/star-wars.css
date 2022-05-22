@@ -1,53 +1,180 @@
 h2{
     font-size: 2rem;
     font-weight: bolder;
-    padding-bottom: 16px;
-    padding-top: 16px;
+    padding: 0;
 }
-.star-wars{
+.Produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #f5f5f5;
-    padding-bottom: 16px ;
+    margin: auto;
 }
-.star-wars__produtos{
+.linhaProduto{
+    padding-bottom: 16px ;
+    
+}
+.linhaProduto__paragrafro{
+    padding-top: 9px;
+}
+.linhaProduto__produtos{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    width: 1136px;
+    height: 252px;
 }
-.star-wars__imagens{    
+.linhaProduto__item{
+   display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+
+}
+.linhaProduto__link-produto{
+    width: 91px;
+    height: 19px;
+}
+.linhaProduto__imagens{    
     background: url(../imagens/star-wars.png) no-repeat center;
     background-size: 100% 100%;
-    width: 190px;
-    height: 200px;
+    width: 176px;
+    height: 174px;
 }
 .Produto__dinheiro{
     font-weight: bolder;
     padding-top: .45rem;
     padding-bottom: .45rem;
 }
-.star-wars__botao{
+.linhaProduto__botao{
     border: none;
     background-color: #f5f5f5;
-    margin: 0;
+    padding: 0;
+    width: 91px;
+
+}
+.linhaProduto__link-produto{
+    text-decoration: none;
+    font-weight: bolder; 
+    color: blue;
+    width: 100px;
+    height: 19px;
     padding: 0;
 }
-.star-wars__link-produto{
-    text-decoration: none;
-    font-weight: bolder;
-    color: blue;
+
+.linhaProduto__subtopicos{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
- .star-wars__subtopicos{
-     display: flex;
-     align-items: center;
-     justify-content:space-between;
-    margin-right: 45px ;
-    margin-left: 30px;
- }
- .seta{
- text-decoration: none;
+.seta{
+    text-decoration: none;
  font-weight: bolder;
  color: blue;
  }
  .seta::after{
-  content: "  👉";
-  color: blue;
+  content: url(../imagens/seta.png);
+  
  }
+ /* imagem da seção do starwars */
+ 
+ .linhaProduto--starwars .imagem1{
+      background: url(../imagens/star-wars.png);
+ }
+ .linhaProduto--starwars .imagem2{
+    background: url(../imagens/starwars\ mascara.png);
+}
+.linhaProduto--starwars .imagem3{
+    background: url(../imagens/stawars\ boneco.png);
+}
+.linhaProduto--starwars .imagem4{
+    background: url(../imagens/stwrars\ robo.png);
+}
+.linhaProduto--starwars .imagem5{
+    background: url(../imagens/starwars\ bonecobb.png);
+}
+.linhaProduto--starwars .imagem6{
+    background: url(../imagens/stwars\ capus.png);
+}
+ 
+/* imagem da seção do Consoles */
+
+.linhaProduto--console .imagem1{
+    background: url(../imagens/console\ controle.png);
+}
+.linhaProduto--console .imagem2{
+  background: url(../imagens/console\ play.png);
+}
+.linhaProduto--console .imagem3{
+  background: url(../imagens/nitendo\ antigo.png);
+}
+.linhaProduto--console .imagem4{
+  background: url(../imagens/nittendo.png);
+}
+.linhaProduto--console .imagem5{
+  background: url(../imagens/caixa\ play.png);
+}
+.linhaProduto--console .imagem6{
+  background: url(../imagens/game\ boy\ color.png);
+}
+ 
+/* imagem da seção do Diversos */
+
+.linhaProduto--diversos .imagem1{
+    background: url(../imagens/camisa\ atari.png);
+}
+.linhaProduto--diversos .imagem2{
+  background: url(../imagens/Camisasnes.png);
+}
+.linhaProduto--diversos .imagem3{
+  background: url(../imagens/controle\ sonic.png);
+}
+.linhaProduto--diversos .imagem4{
+  background: url(../imagens/console\ nitendo.png);
+}
+.linhaProduto--diversos .imagem5{
+  background: url(../imagens/controle\ vitual.png);
+}
+.linhaProduto--diversos .imagem6{
+  background: url(../imagens/Boneco\ pockemon.png);
+}
+/* Versão tablet */
+@media screen and (max-width:768px) {
+
+  .linhaProduto__produtos{
+    justify-content: center;
+    margin-right: 5px;
+  }
+  .linhaProduto__item{
+    margin-left: 10px;
+  }
+  .linhaProduto__item:nth-last-child(-n+2){
+    display: none;
+  }
+  .linhaProduto__subtopicos{
+    
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+}
+/* versão mobile */
+@media screen and (max-width:480px) {
+  .linhaProduto__produtos{
+    flex-wrap: wrap;
+     width: 100%;
+     height: auto;
+     margin-bottom: 20px;
+     justify-content: space-evenly;
+  }
+  .linhaProduto__item{
+    width: 200px;
+  }
+  .linhaProduto__subtopicos{
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+}

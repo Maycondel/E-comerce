@@ -3,14 +3,13 @@
     background: url(../imagens/banner-image.png) no-repeat ;
     background-size: 100% auto;
     height: 300px;
-    background-color: aqua;
     position: relative;
 } 
 .banner__conteudo{
     position: absolute;
     bottom: 0;
     margin-bottom: 30px;
-    margin-left: 150px;
+    margin-left: 115px;
 }
 .banner__titulo{
     color: white;
@@ -25,4 +24,34 @@
     padding: 1rem;
     border: none;
     background-color: blue;
+}
+/* Versão Tablet */
+@media screen and (max-width:768px) {
+    .banner{
+     height: 352px;
+     background-color: none;
+     background-size: 100% 352px;
+    }
+    .banner__conteudo{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        height: 150px;
+        justify-content: space-around;
+    }
+    .banner__botao-console{
+        width: 150px;
+    }
+}
+/* versão mobile */
+@media screen {
+    .banner{
+    height: 300px;
+    }
+    .banner__conteudo{
+        width: 100%;
+    }
+    .banner__titulo{
+        font-size: 32px;
+    }
 }
