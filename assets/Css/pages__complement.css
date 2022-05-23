@@ -1,5 +1,5 @@
 .cabeçalho__campo-pesquisa{
-   width: 25vw;
+   max-width: 25vw;
 }
 .cabeçalho{
     padding: 35px;
@@ -22,6 +22,11 @@ main  input{
     height: 50px;
     padding-left: 5px;
     margin-bottom: 25px ;
+}
+.cabeçalho{
+    justify-content: space-between;
+    margin-right: 73px;
+    margin-left: 73px;
 }
 form .botao{
     width: 500px;
@@ -52,5 +57,34 @@ form div{
     height: 60px; 
     background-color: #efefef;
 }
+/* Seção de produtos */
+.linhaProduto__subtopicos .seta::after{
+  display: none;
+}
+.linhaProduto__subtopicos{
+    margin-top: 60px;
+}
+.linhaProduto__subtopicos .seta{
+    margin-right: 20px;
+    color: white;
+    background-color: #2a7ae4;
+    padding: 20px;
+}
 
+.linhaProduto{
+    margin-bottom: 30px;
+}
+@media screen  and (max-width:1150px) {
+.cabeçalho{
+margin: 0;
+}
 
+}
+@media screen  and (max-width:739px) {
+.order1{
+    order: 2;
+}
+.order2{
+order: 1;
+}
+}
