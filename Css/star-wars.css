@@ -146,7 +146,7 @@ section
   background: url(../imagens/Boneco\ pockemon.png);
 }
 /* Versão tablet */
-@media screen and (max-width:768px) {
+@media screen and (min-width:740px) and (max-width:1150px){
 
   .linhaProduto__produtos{
     justify-content: center;
@@ -165,7 +165,7 @@ section
   }
 }
 /* versão mobile */
-@media screen and (max-width:480px) {
+@media screen and (max-width: 739px) {
   .linhaProduto__produtos{
     flex-wrap: wrap;
      width: 100%;

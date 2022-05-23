@@ -41,17 +41,36 @@
     }
     .banner__botao-console{
         width: 150px;
+        
     }
 }
 /* versão mobile */
-@media screen {
+@media screen  and (max-width: 739px) {
     .banner{
-    height: 300px;
+  width: 100%;
     }
     .banner__conteudo{
         width: 100%;
+        padding-bottom:25px ;
     }
     .banner__titulo{
         font-size: 32px;
+    }
+}
+/* tablet */
+@media screen  and (max-width: 1150px) {
+  
+    .banner{
+        background-size: 100% 500px;
+        max-height: 500px;
+    }
+
+    .banner__conteudo{
+        width: 100%;
+        padding-bottom:25px ;
+    }
+    .banner__titulo{
+        font-size: 32px;
+
     }
 }
