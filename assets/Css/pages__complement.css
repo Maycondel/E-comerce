@@ -4,7 +4,7 @@
 .cabeçalho{
     padding: 35px;
 }
-body,section{
+section{
     overflow: hidden;
 }
 main form{
