@@ -32,8 +32,8 @@ main  input{
     margin-left: 73px;
 }
 .rodape__campo{
-    max-width: 100vmax;
-    min-width: 70vmin;
+     width: 100%;
+   
 }
 form .botao{
     max-width: 70vmax;
@@ -59,11 +59,7 @@ div{
     padding: 0;
     text-align: center;
 }
-form div{
-    width: 500px;
-    height: 60px; 
-    background-color: #efefef;
-}
+
 /* Seção de produtos */
 .linhaProduto__subtopicos .seta::after{
   display: none;
@@ -82,17 +78,5 @@ form div{
 .linhaProduto{
     margin-bottom: 30px;
 }
-@media screen  and (max-width:1150px) {
-.cabeçalho{
-margin: 0;
-}
 
-}
-@media screen  and (max-width:739px) {
-.order1{
-    order: 2;
-}
-.order2{
-order: 1;
-}
-}
+
