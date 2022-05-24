@@ -4,7 +4,9 @@
 .cabeçalho{
     padding: 35px;
 }
-
+body,section{
+    overflow: hidden;
+}
 main form{
     padding: 80px;
     background-color: #f5f5f5;
@@ -18,7 +20,8 @@ main legend{
      margin-bottom: 23px;
 }
 main  input{
-    width: 490px;
+    max-width: 100vmax;
+    min-width: 70vmin;
     height: 50px;
     padding-left: 5px;
     margin-bottom: 25px ;
@@ -28,13 +31,17 @@ main  input{
     margin-right: 73px;
     margin-left: 73px;
 }
+.rodape__campo{
+    max-width: 100vmax;
+    min-width: 70vmin;
+}
 form .botao{
-    width: 500px;
-    height: 50px;
-    padding-left: 5px;
+    max-width: 70vmax;
+    min-width: 70vmin;
+  
     margin: 0;
     border: none;
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     cursor: pointer;
     outline: none;
     background-color: blue;
@@ -70,6 +77,7 @@ form div{
     background-color: #2a7ae4;
     padding: 20px;
 }
+
 
 .linhaProduto{
     margin-bottom: 30px;
